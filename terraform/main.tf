@@ -19,7 +19,8 @@ resource "render_web_service" "flask_app" {
 
   runtime_source = {
     image = {
-      image_url = var.image_url
+      image_url = "ghcr.io/jamelachkar-droid/flask-deploy-demo"
+      tag       = "latest"
     }
   }
 
